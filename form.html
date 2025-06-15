@@ -1,0 +1,65 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #A7C1A8;
+    }
+    form {  
+      max-width: 500px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Contact Us</h2>
+  <form action="/submit-form" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your Name :">
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email"  required placeholder="Enter your Email ID :">
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone"  required pattern="[0-9]{10}" placeholder="e.g., 1234567890">
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" required name="subject" >
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required  rows="5" ></textarea>
+
+    <button type="submit">Submit</button>
+
+  </form>
+  <a href="Index.html" ><button>Home</button></a>
+</body>
+</html>
